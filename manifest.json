@@ -1,0 +1,17 @@
+{
+  "name": "Test Extension",
+  "version": "0.0.0",
+  "description": "This is a test extension",
+  "permissions": [
+    "tabs"
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self';",
+  "background": {
+    "scripts": ["/background.js"],
+    "persistent": true
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
